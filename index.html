@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fu Nails - Centro Estetico Unghie Torino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">福</div>
+                <div class="brand-name">Fu Nails</div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Apri menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="prezzi.html">Prezzi</a></li>
+                <li><a href="galleria.html">Galleria</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Promo banner removed -->
+            <h1>Fu Nails</h1>
+            <p class="subtitle">Centro Estetico Specializzato in Nail Art</p>
+            <p class="tagline">Dove l'eleganza incontra la perfezione</p>
+            <div class="cta-buttons">
+                <a href="contatti.html" class="btn btn-primary">Prenota Ora</a>
+                <a href="servizi.html" class="btn btn-secondary">I Nostri Servizi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <h2 class="section-title">Benvenuti da Fu Nails</h2>
+            <p class="section-subtitle">Il tuo centro estetico di fiducia a Torino</p>
+
+            <div class="welcome-content">
+                <p>
+                    Da Fu Nails offriamo un'esperienza di bellezza completa, dedicata alla cura e al benessere delle tue
+                    unghie.
+                    Siamo specializzati in manicure, pedicure, ricostruzione gel e nail art personalizzata.
+                </p>
+                <p>
+                    Il nostro team di professionisti esperti utilizza solo prodotti di alta qualità per garantire
+                    risultati impeccabili e duraturi. Ogni trattamento è pensato per farti sentire coccolata e speciale.
+                </p>
+                <p>
+                    Situati in Via Salbertrand 69 a Torino, siamo aperti dal lunedì al sabato dalle 9:00 alle 20:00.
+                    Ti aspettiamo per regalarti un momento di puro relax e bellezza.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <h2 class="section-title">I Nostri Servizi Principali</h2>
+            <p class="section-subtitle">Scopri tutto quello che possiamo fare per te</p>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <img src="images/gallery-manicure.png" class="service-icon-img" alt="Manicure">
+                    <h3>Manicure</h3>
+                    <p>Cura completa delle unghie con trattamenti classici e semipermanenti</p>
+                    <a href="servizi.html" class="card-link">Scopri di più →</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <img src="images/gallery-pedicure.png" class="service-icon-img" alt="Pedicure">
+                    <h3>Pedicure</h3>
+                    <p>Trattamenti curativi e estetici per piedi belli e curati</p>
+                    <a href="servizi.html" class="card-link">Scopri di più →</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <img src="images/gallery-gel.png" class="service-icon-img" alt="Ricostruzione Gel">
+                    <h3>Ricostruzione Gel</h3>
+                    <p>Allungamento e copertura con gel di alta qualità</p>
+                    <a href="servizi.html" class="card-link">Scopri di più →</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <img src="images/gallery-nailart.png" class="service-icon-img" alt="Nail Art">
+                    <h3>Nail Art</h3>
+                    <p>Design personalizzati e decorazioni creative per unghie uniche</p>
+                    <a href="servizi.html" class="card-link">Scopri di più →</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <img src="images/Offerta natalizia per la depilazione del 30%.jpeg" class="service-icon-img"
+                        alt="Depilazione">
+                    <h3>Depilazione</h3>
+                    <p>Ceretta professionale per tutto il corpo</p>
+                    <a href="servizi.html" class="card-link">Scopri di più →</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <img src="images/Pulizia del Viso_ prepariamoci alle Vacanze! Obiettivo del trattamento_ migliorare il turn over cellulare, asportare comedoni e grani di miglio, stimolare il microcircolo, decongestionare-riequilibrare, preparare.jpeg"
+                        class="service-icon-img" alt="Trattamenti Viso">
+                    <h3>Trattamenti Viso</h3>
+                    <p>Pulizia viso e maschere per una pelle luminosa</p>
+                    <a href="servizi.html" class="card-link">Scopri di più →</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="prezzi.html" class="btn btn-primary">Vedi Tutti i Prezzi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Perché Scegliere Fu Nails</h2>
+
+            <div class="features-grid">
+                <div class="feature-item fade-in">
+                    <img src="images/Sessão de Solteiros.jpeg" class="service-icon-img" alt="Professionalità"
+                        style="width: 100px; height: 100px;">
+                    <h3>Professionalità</h3>
+                    <p>Team esperto e qualificato con anni di esperienza nel settore</p>
+                </div>
+
+                <div class="feature-item fade-in">
+                    <img src="images/Best 8 Nail Hygiene Practices for Professionals.jpeg" class="service-icon-img"
+                        alt="Prodotti di Qualità" style="width: 100px; height: 100px;">
+                    <h3>Prodotti di Qualità</h3>
+                    <p>Utilizziamo solo prodotti professionali e di alta qualità</p>
+                </div>
+
+                <div class="feature-item fade-in">
+                    <img src="images/Object of Desire_ Ibazen Clocks, Handmade in Japan - Remodelista.jpeg"
+                        class="service-icon-img" alt="Orari Flessibili" style="width: 100px; height: 100px;">
+                    <h3>Orari Flessibili</h3>
+                    <p>Aperti dal lunedì al sabato con orario continuato</p>
+                </div>
+
+                <div class="feature-item fade-in">
+                    <img src="images/Young woman holding credit card and smart phone while online shopping___.jpeg"
+                        class="service-icon-img" alt="Prezzi Trasparenti" style="width: 100px; height: 100px;">
+                    <h3>Prezzi Trasparenti</h3>
+                    <p>Listino chiaro e prezzi competitivi senza sorprese</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prenota il Tuo Appuntamento</h2>
+            <p>Contattaci su WhatsApp per prenotare il tuo trattamento</p>
+            <a href="https://wa.me/393395981384?text=Ciao%2C%20vorrei%20prenotare%20un%20appuntamento%20da%20Fu%20Nails"
+                class="whatsapp-btn" target="_blank">
+                <span>📱</span>
+                Prenota su WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Fu Nails</h3>
+                <p>Centro Estetico Specializzato in Nail Art</p>
+                <p>Via Salbertrand 69, Torino</p>
+                <p>Tel: <a href="tel:+393395981384" style="color: var(--primary); text-decoration: none;">+39 339 598
+                        1384</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="servizi.html">Servizi</a>
+                <a href="prezzi.html">Prezzi</a>
+                <a href="galleria.html">Galleria</a>
+                <a href="contatti.html">Contatti</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fu Nails - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

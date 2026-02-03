@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Fu Nails</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">福</div>
+                <div class="brand-name">Fu Nails</div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Apri menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="prezzi.html">Prezzi</a></li>
+                <li><a href="galleria.html">Galleria</a></li>
+                <li><a href="contatti.html" class="active">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contatti</h1>
+            <p>Vieni a trovarci o prenota il tuo appuntamento</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card fade-in">
+                    <div class="info-icon">📍</div>
+                    <h3>Dove Siamo</h3>
+                    <p>
+                        <strong>Via Salbertrand 69</strong><br>
+                        Torino, Italia
+                    </p>
+                    <a href="https://maps.google.com/?q=Via+Salbertrand+69+Torino" target="_blank" class="info-link">
+                        Apri in Google Maps →
+                    </a>
+                </div>
+
+                <div class="info-card fade-in">
+                    <div class="info-icon">🕒</div>
+                    <h3>Orari di Apertura</h3>
+                    <p>
+                        <strong>Lunedì - Sabato</strong><br>
+                        9:00 - 20:00
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        <strong>Domenica</strong><br>
+                        Chiuso
+                    </p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <div class="info-icon">📞</div>
+                    <h3>Telefono</h3>
+                    <p>
+                        <a href="tel:+393395981384" class="phone-link">
+                            +39 339 598 1384
+                        </a>
+                    </p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--secondary);">
+                        Chiamaci per informazioni o prenotazioni
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Section -->
+    <section class="whatsapp-section">
+        <div class="container">
+            <div class="whatsapp-box fade-in">
+                <h2>Prenota su WhatsApp</h2>
+                <p>Il modo più veloce e comodo per prenotare il tuo appuntamento</p>
+                <a href="https://wa.me/393395981384?text=Ciao%2C%20vorrei%20prenotare%20un%20appuntamento%20da%20Fu%20Nails"
+                    class="whatsapp-btn" target="_blank">
+                    <span>📱</span>
+                    Apri WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-section">
+        <div class="container">
+            <h2 class="section-title">Richiedi Informazioni</h2>
+            <p class="section-subtitle">Compila il form e ti contatteremo il prima possibile</p>
+
+            <div class="booking-form-container fade-in">
+                <form class="booking-form" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome e Cognome *</label>
+                            <input type="text" id="name" name="name" required placeholder="Il tuo nome completo">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefono *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+39 xxx xxx xxxx">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tuaemail@esempio.com">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Servizio di Interesse *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Seleziona un servizio</option>
+                                <option value="manicure">Manicure</option>
+                                <option value="manicure-semi">Manicure Semipermanente</option>
+                                <option value="pedicure">Pedicure</option>
+                                <option value="pedicure-semi">Pedicure Semipermanente</option>
+                                <option value="gel">Ricostruzione Gel</option>
+                                <option value="nailart">Nail Art</option>
+                                <option value="depilazione">Depilazione/Ceretta</option>
+                                <option value="viso">Trattamento Viso</option>
+                                <option value="altro">Altro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Data Preferita</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Note Aggiuntive</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Eventuali richieste particolari o domande..."></textarea>
+                    </div>
+
+                    <div class="form-privacy">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            <span>Accetto l'informativa sulla privacy *</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Invia Richiesta
+                    </button>
+
+                    <p class="form-note">* Campi obbligatori</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Come Raggiungerci</h2>
+            <div class="map-placeholder fade-in" style="padding: 0; overflow: hidden;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.382062772596!2d7.6322813!3d45.0717723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d913459c55d%3A0x6273418520286824!2sVia%20Salbertrand%2C%2069%2C%2010146%20Torino%20TO!5e0!3m2!1sit!2sit!4v1709228800000!5m2!1sit!2sit"
+                    width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Domande Frequenti</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <h3>❓ Devo prenotare?</h3>
+                    <p>La prenotazione è consigliata per evitare attese, ma accettiamo anche clienti senza appuntamento
+                        in base alla disponibilità.</p>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <h3>💳 Quali metodi di pagamento accettate?</h3>
+                    <p>Accettiamo pagamenti in contanti e con carta di credito/debito.</p>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <h3>⏱️ Quanto dura un trattamento?</h3>
+                    <p>Dipende dal servizio: una manicure classica circa 30-45 minuti, la ricostruzione gel 1-2 ore.</p>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <h3>🎨 Posso portare ispirazioni per la nail art?</h3>
+                    <p>Assolutamente sì! Porta pure foto o immagini che ti ispirano e le realizzeremo insieme.</p>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <h3>🔄 Ogni quanto va fatto il ritocco gel?</h3>
+                    <p>Il ritocco va fatto ogni 3-4 settimane per mantenere le unghie perfette.</p>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <h3>🅿️ C'è parcheggio?</h3>
+                    <p>È possibile parcheggiare nelle vicinanze con parcheggi su strada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Fu Nails</h3>
+                <p>Centro Estetico Specializzato in Nail Art</p>
+                <p>Via Salbertrand 69, Torino</p>
+                <p>Tel: <a href="tel:+393395981384" style="color: var(--primary); text-decoration: none;">+39 339 598
+                        1384</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="servizi.html">Servizi</a>
+                <a href="prezzi.html">Prezzi</a>
+                <a href="galleria.html">Galleria</a>
+                <a href="contatti.html">Contatti</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fu Nails - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').options[document.getElementById('service').selectedIndex].text;
+            const date = document.getElementById('date').value;
+            const message = document.getElementById('message').value;
+
+            let whatsappText = `Ciao, sono ${name}.%0A`;
+            whatsappText += `Vorrei prenotare: ${service}%0A`;
+            if (date) whatsappText += `Data preferita: ${date}%0A`;
+            if (message) whatsappText += `Note: ${message}%0A`;
+            whatsappText += `Telefono: ${phone}`;
+
+            window.open(`https://wa.me/393395981384?text=${whatsappText}`, '_blank');
+
+            event.target.reset();
+            alert('Grazie! Ti stiamo reindirizzando su WhatsApp per completare la prenotazione.');
+        }
+    </script>
+</body>
+
+</html>

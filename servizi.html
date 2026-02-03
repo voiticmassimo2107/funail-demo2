@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi - Fu Nails</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">福</div>
+                <div class="brand-name">Fu Nails</div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Apri menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html" class="active">Servizi</a></li>
+                <li><a href="prezzi.html">Prezzi</a></li>
+                <li><a href="galleria.html">Galleria</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>I Nostri Servizi</h1>
+            <p>Trattamenti professionali per la cura e la bellezza delle tue unghie</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-detail">
+        <div class="container">
+            <div class="services-intro fade-in">
+                <p>
+                    Da Fu Nails troverai un'ampia gamma di servizi dedicati alla cura delle unghie e alla bellezza.
+                    Dalla manicure classica alla ricostruzione gel, dalla nail art creativa ai trattamenti specifici per
+                    viso e corpo.
+                    Il nostro team esperto utilizza solo prodotti di alta qualità per garantirti risultati impeccabili e
+                    duraturi.
+                </p>
+            </div>
+
+            <!-- Manicure -->
+            <div class="service-section fade-in">
+                <div class="service-header">
+                    <img src="images/gallery-manicure.png" class="service-icon-large-img" alt="Manicure">
+                    <div>
+                        <h2>Manicure</h2>
+                        <p class="service-description">
+                            La manicure è il trattamento fondamentale per mantenere le tue mani belle e curate.
+                            Offriamo diverse tipologie di manicure, dalla semplice limatura alla manicure completa con
+                            smalto semipermanente.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-detail-item">
+                        <h4>Taglia Unghie</h4>
+                        <p>Taglio e limatura base delle unghie</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Cambio Smalto + Limatura</h4>
+                        <p>Rimozione dello smalto precedente e applicazione del nuovo colore</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Manicure Completa</h4>
+                        <p>Trattamento completo con cura delle cuticole, limatura e massaggio</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Semipermanente</h4>
+                        <p>Smalto gel a lunga durata che rimane perfetto fino a 3 settimane</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pedicure -->
+            <div class="service-section fade-in">
+                <div class="service-header">
+                    <img src="images/gallery-pedicure.png" class="service-icon-large-img" alt="Pedicure">
+                    <div>
+                        <h2>Pedicure</h2>
+                        <p class="service-description">
+                            La pedicure curativa è essenziale per mantenere i piedi sani e belli.
+                            Trattiamo calli, duroni e cuticole con professionalità e delicatezza,
+                            garantendo comfort e benessere.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-detail-item">
+                        <h4>Pedicure Curativo</h4>
+                        <p>Trattamento completo con rimozione di calli, duroni e cura delle unghie</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Pedicure con Smalto</h4>
+                        <p>Pedicure curativo completo con applicazione di smalto o semipermanente</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Massaggio Mezza Gamba</h4>
+                        <p>Massaggio rilassante di 20 minuti per gambe leggere e toniche</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ricostruzione Gel -->
+            <div class="service-section fade-in">
+                <div class="service-header">
+                    <img src="images/gallery-gel.png" class="service-icon-large-img" alt="Ricostruzione Gel">
+                    <div>
+                        <h2>Ricostruzione Gel</h2>
+                        <p class="service-description">
+                            La ricostruzione in gel permette di avere unghie lunghe e resistenti con un aspetto
+                            naturale.
+                            Utilizziamo gel di alta qualità che rispettano la salute dell'unghia naturale.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-detail-item">
+                        <h4>Copertura Gel</h4>
+                        <p>Rinforzo delle unghie naturali con gel per una maggiore resistenza</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Ricostruzione con Cartina</h4>
+                        <p>Allungamento delle unghie con forme personalizzate</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Ritocco Gel</h4>
+                        <p>Manutenzione della ricostruzione ogni 3-4 settimane</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Rimozione Gel</h4>
+                        <p>Rimozione professionale che preserva la salute dell'unghia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nail Art -->
+            <div class="service-section fade-in">
+                <div class="service-header">
+                    <img src="images/gallery-nailart.png" class="service-icon-large-img" alt="Decorazione & Nail Art">
+                    <div>
+                        <h2>Decorazione & Nail Art</h2>
+                        <p class="service-description">
+                            Rendi uniche le tue unghie con le nostre decorazioni personalizzate.
+                            Dal classico french alle tecniche più moderne come il baby boomer,
+                            fino a vere opere d'arte sulle unghie.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-detail-item">
+                        <h4>French Manicure</h4>
+                        <p>Il classico intramontabile con punta bianca</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Baby Boomer / Sfumatura</h4>
+                        <p>Effetto ombré delicato e naturale</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Nail Art Personalizzata</h4>
+                        <p>Design unici creati su misura: fiori, geometrie, glitter e molto altro</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Depilazione -->
+            <div class="service-section fade-in">
+                <div class="service-header">
+                    <img src="images/Offerta natalizia per la depilazione del 30%.jpeg" class="service-icon-large-img"
+                        alt="Depilazione">
+                    <div>
+                        <h2>Depilazione / Ceretta</h2>
+                        <p class="service-description">
+                            Servizi di depilazione professionali per tutto il corpo.
+                            Utilizziamo cera delicata sulla pelle per garantire risultati duraturi
+                            con il minimo fastidio.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-detail-item">
+                        <h4>Viso</h4>
+                        <p>Sopracciglia, baffetti e altre zone delicate del viso</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Corpo</h4>
+                        <p>Ascelle, braccia, gambe (mezza o intera), schiena, petto</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Zone Intime</h4>
+                        <p>Inguine parziale o totale, gluteo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trattamenti Viso -->
+            <div class="service-section fade-in">
+                <div class="service-header">
+                    <img src="images/Pulizia del Viso_ prepariamoci alle Vacanze! Obiettivo del trattamento_ migliorare il turn over cellulare, asportare comedoni e grani di miglio, stimolare il microcircolo, decongestionare-riequilibrare, preparare.jpeg"
+                        class="service-icon-large-img" alt="Trattamenti Viso">
+                    <div>
+                        <h2>Trattamenti Viso</h2>
+                        <p class="service-description">
+                            Coccola la tua pelle con i nostri trattamenti viso professionali.
+                            Pulizia profonda, idratazione e maschere specifiche per ogni tipo di pelle.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-detail-item">
+                        <h4>Pulizia Viso</h4>
+                        <p>Detersione profonda con estrazione punti neri e impurità</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4>Pulizia Viso + Maschera</h4>
+                        <p>Trattamento completo con maschera nutriente o purificante personalizzata</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Scopri i Nostri Prezzi</h2>
+            <p>Consulta il nostro listino completo con prezzi trasparenti</p>
+            <a href="prezzi.html" class="btn btn-primary" style="background: var(--white); color: var(--primary);">Vedi
+                il Listino</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Fu Nails</h3>
+                <p>Centro Estetico Specializzato in Nail Art</p>
+                <p>Via Salbertrand 69, Torino</p>
+                <p>Tel: <a href="tel:+393395981384" style="color: var(--primary); text-decoration: none;">+39 339 598
+                        1384</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="servizi.html">Servizi</a>
+                <a href="prezzi.html">Prezzi</a>
+                <a href="galleria.html">Galleria</a>
+                <a href="contatti.html">Contatti</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fu Nails - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

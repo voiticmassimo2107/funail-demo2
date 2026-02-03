@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria - Fu Nails</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">福</div>
+                <div class="brand-name">Fu Nails</div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Apri menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="prezzi.html">Prezzi</a></li>
+                <li><a href="galleria.html" class="active">Galleria</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Galleria</h1>
+            <p>I nostri lavori parlano da soli</p>
+        </div>
+    </section>
+
+    <!-- Gallery Intro -->
+    <section class="gallery-intro">
+        <div class="container">
+            <div class="intro-text fade-in">
+                <p>
+                    Scopri le nostre creazioni e lasciati ispirare per il tuo prossimo look.
+                    Ogni lavoro è realizzato con passione e attenzione ai dettagli,
+                    utilizzando prodotti di alta qualità e le tecniche più innovative.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-categories">
+        <div class="container">
+            <div class="category-filters fade-in">
+                <button class="filter-btn active" onclick="filterGallery('all')">Tutti</button>
+                <button class="filter-btn" onclick="filterGallery('manicure')">Manicure</button>
+                <button class="filter-btn" onclick="filterGallery('pedicure')">Pedicure</button>
+                <button class="filter-btn" onclick="filterGallery('gel')">Gel</button>
+                <button class="filter-btn" onclick="filterGallery('nailart')">Nail Art</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Manicure Items -->
+                <div class="gallery-item fade-in" data-category="manicure">
+                    <div class="gallery-image"
+                        style="background-image: url('images/gallery-manicure.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Manicure Classica</h4>
+                        <p>Eleganza senza tempo</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="manicure">
+                    <div class="gallery-image"
+                        style="background-image: url('images/download.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Semipermanente Rosa</h4>
+                        <p>Colore duraturo</p>
+                    </div>
+                </div>
+
+                <!-- Pedicure Items -->
+                <div class="gallery-item fade-in" data-category="pedicure">
+                    <div class="gallery-image"
+                        style="background-image: url('images/gallery-pedicure.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Pedicure Curativo</h4>
+                        <p>Piedi perfetti</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="pedicure">
+                    <div class="gallery-image"
+                        style="background-image: url('images/29 Fresh Summer Toe Nails Colors to Try in 2025.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Pedicure Estivo</h4>
+                        <p>Colori vivaci</p>
+                    </div>
+                </div>
+
+                <!-- Gel Items -->
+                <div class="gallery-item fade-in" data-category="gel">
+                    <div class="gallery-image"
+                        style="background-image: url('images/gallery-gel.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Ricostruzione Gel</h4>
+                        <p>Allungamento naturale</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="gel">
+                    <div class="gallery-image"
+                        style="background-image: url('images/download (2).jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Copertura Gel</h4>
+                        <p>Rinforzo e brillantezza</p>
+                    </div>
+                </div>
+
+                <!-- Nail Art Items -->
+                <div class="gallery-item fade-in" data-category="nailart">
+                    <div class="gallery-image"
+                        style="background-image: url('images/gallery-nailart.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>French Classica</h4>
+                        <p>Raffinatezza elegante</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nailart">
+                    <div class="gallery-image"
+                        style="background-image: url('images/download (3).jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Baby Boomer</h4>
+                        <p>Sfumature delicate</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nailart">
+                    <div class="gallery-image"
+                        style="background-image: url('images/Purple....jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Nail Art Floreale</h4>
+                        <p>Decorazioni personalizzate</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nailart">
+                    <div class="gallery-image"
+                        style="background-image: url('images/download (4).jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Nail Art con Brillantini</h4>
+                        <p>Effetto glam</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nailart">
+                    <div class="gallery-image"
+                        style="background-image: url('images/40+ Perfect Summer Blue Nails to Elevate Your Vacation.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Design Tropicale</h4>
+                        <p>Vibrazioni estive</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nailart">
+                    <div class="gallery-image"
+                        style="background-image: url('images/%23nailart %23naildesign.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Geometrie Moderne</h4>
+                        <p>Stile contemporaneo</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="manicure">
+                    <div class="gallery-image"
+                        style="background-image: url('images/download (6).jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Nude Elegante</h4>
+                        <p>Naturale e chic</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="gel">
+                    <div class="gallery-image"
+                        style="background-image: url('images/download (1).jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Gel Colorato</h4>
+                        <p>Finish impeccabile</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nailart">
+                    <div class="gallery-image"
+                        style="background-image: url('images/chocolate brown nails easy halloween nails  pumpkin nail designs.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Nail Art Astratta</h4>
+                        <p>Creatività senza limiti</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nailart">
+                    <div class="gallery-image"
+                        style="background-image: url('images/download.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Ombré Sunset</h4>
+                        <p>Sfumature calde</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nailart">
+                    <div class="gallery-image"
+                        style="background-image: url('images/Flower Nail Art.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Nail Art Floreale</h4>
+                        <p>Dettagli raffinati</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nailart">
+                    <div class="gallery-image"
+                        style="background-image: url('images/Nail photo aesthetic.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Stile Aesthetic</h4>
+                        <p>Moderno e chic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="container">
+            <div class="instagram-content fade-in">
+                <h2>Seguici su Instagram</h2>
+                <p>Resta aggiornata sulle ultime tendenze e sui nostri lavori</p>
+                <div class="social-icons">
+                    <a href="#" class="social-link">
+                        <span class="icon">📱</span>
+                        <span>@funails_torino</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Vuoi Anche Tu Unghie Così Belle?</h2>
+            <p>Prenota il tuo appuntamento e realizza il look dei tuoi sogni</p>
+            <a href="contatti.html" class="btn btn-primary"
+                style="background: var(--white); color: var(--primary);">Prenota Ora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Fu Nails</h3>
+                <p>Centro Estetico Specializzato in Nail Art</p>
+                <p>Via Salbertrand 69, Torino</p>
+                <p>Tel: <a href="tel:+393395981384" style="color: var(--primary); text-decoration: none;">+39 339 598
+                        1384</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="servizi.html">Servizi</a>
+                <a href="prezzi.html">Prezzi</a>
+                <a href="galleria.html">Galleria</a>
+                <a href="contatti.html">Contatti</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fu Nails - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery Filter Function
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
